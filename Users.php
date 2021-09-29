@@ -109,7 +109,8 @@ try
  echo "Mouse connected to pc2: ".$users[2]->getComputer()->getMouse();}
 catch (\Throwable $th) {
     echo "Mouse error:" . $th->getMessage();}
-
-
+    echo "<br />";
+    echo "<br />";
+var_dump($user3);
 
 ?>
