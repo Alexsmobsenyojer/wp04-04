@@ -98,15 +98,17 @@ $user3->setName('Charlie');
 echo "<br />";
 echo $user3->getName();
 echo "<br />";
-
+echo "<br />";
 $computers = array( $pc1, $pc2);  
 $users = array($user1,$user2,$user3);
 $users[0]->assignComputer($computers[0]);
 $users[1]->assignComputer($computers[1]);
 $users[2]->assignComputer($computers[1]);
-
-$users[2]->getComputer()->connectMouse("Myška");
-
+try
+{$users[2]->getComputer()->connectMouse("Myš domácí");
+ echo "Mouse connected to pc2: ".$users[2]->getComputer()->getMouse();}
+catch (\Throwable $th) {
+    echo "Mouse error:" . $th->getMessage();}
 
 
 

@@ -146,15 +146,15 @@ $pc1 = new Computer("ATX");
 $pc2 = new Computer("miniATX");
     try
      {
-        $pc1->addMotherBoard('IDK ');
-        $pc1->mountDrive('248 GB');
-        $pc1->addCPU('Intel i9');
-        $pc1->addRAM(' 32 GB dual channel pack');
-        $pc1->connectKeyboard('Razer keyboard');
-        $pc1->connectMouse('Razer mouse');
-        $pc1->addGPU ('RX 580');
-        $pc1->connectDisplay('Acer');
-        $pc1->addPowerSupply  ('600W');
+        $pc2->addMotherBoard('IDK ');
+        $pc2->mountDrive('248 GB');
+        $pc2->addCPU('Intel i9');
+        $pc2->addRAM(' 32 GB dual channel pack');
+        $pc2->connectKeyboard('Razer keyboard');
+        $pc2->connectMouse('Razer mouse');
+        $pc2->addGPU ('RX 580');
+        $pc2->connectDisplay('Acer');
+        $pc2->addPowerSupply  ('600W');
         
         echo "Computer2 connected all peripherials successfully!";
         } 
