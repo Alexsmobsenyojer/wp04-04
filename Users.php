@@ -78,21 +78,22 @@ public function getComputer()
 
 }
 
-$user1 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
+$user1 = new User("Deez","Androvic","pudding@deeznuts.com","6.9.2000","fluid");
 $user1->setName('Alex');
+echo "<br />";
 echo "<br />";
 echo $user1->getName();
 echo "<br />";
 
 
-$user2 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
+$user2 = new User("Deez","Brendon","Brandon@gmail.com","3.10.1985","fluid");
 $user2->setName('Brandon');
 echo "<br />";
 echo $user2->getName();
 echo "<br />";
 
 
-$user3 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
+$user3 = new User("Deez","Sheen","pudding@mail.com","1.4.1996","fluid");
 $user3->setName('Charlie');
 echo "<br />";
 echo $user3->getName();
@@ -104,11 +105,9 @@ $users[0]->assignComputer($computers[0]);
 $users[1]->assignComputer($computers[1]);
 $users[2]->assignComputer($computers[1]);
 
-$pc2 -> connectMouse("ASUS mouse");
-echo $pc2 -> getMouse();
+$users[2]->getComputer()->connectMouse("Myška");
 
-$user1 -> getComputer();
-$user2 -> getComputer();
-$user3 -> getComputer();
+
+
 
 ?>
