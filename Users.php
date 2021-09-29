@@ -104,6 +104,10 @@ $users[0]->assignComputer($computers[0]);
 $users[1]->assignComputer($computers[1]);
 $users[2]->assignComputer($computers[1]);
 
+$user2 -> connectMouse("ASUS mouse");
+
 $user1 -> getComputer();
+$user2 -> getComputer();
+$user3 -> getComputer();
 
 ?>
