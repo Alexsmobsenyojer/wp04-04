@@ -83,8 +83,7 @@ $user1->setName('Alex');
 echo "<br />";
 echo $user1->getName();
 echo "<br />";
-echo $user1->getName();
-echo "<br />";
+
 
 $user2 = new User("Deez","Nuts","pudding@deeznuts.com","6.9.2000","fluid");
 $user2->setName('Brandon');
@@ -104,5 +103,7 @@ $users = array($user1,$user2,$user3);
 $users[0]->assignComputer($computers[0]);
 $users[1]->assignComputer($computers[1]);
 $users[2]->assignComputer($computers[1]);
+
+$user1 -> getComputer();
 
 ?>
