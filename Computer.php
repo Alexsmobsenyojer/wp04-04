@@ -119,7 +119,14 @@ class Computer
         throw new Exception("You dont have a powersupply");
     }
     }
-    
+    public function  getCase()
+    {
+        return $this->case;
+        
+        
+    }
+    public function  getMB()
+    {return $this->MB;}
     
     
 
@@ -165,3 +172,11 @@ $pc2 = new Computer("miniATX");
  $computers = array( $pc1, $pc2);                    
 
 ?>
+        return $this->SSD;
+        return $this->CPU;
+        return $this->RAM;
+        return $this->keyboard;
+        return $this->mouse;
+        return $this->GPU;
+        return $this->display;
+        return $this->powersupply;

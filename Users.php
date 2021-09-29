@@ -112,5 +112,12 @@ catch (\Throwable $th) {
     echo "<br />";
     echo "<br />";
 var_dump($user3);
+foreach ($users as $user) {
+    echo "<br />";
+    echo "<br />";
+   echo "Case is: ".$user->getComputer()->getCase();
+   echo ", MB is: ".$user->getComputer()->getMB();
+   echo "<br />";echo "<br />";
+}
 
 ?>
