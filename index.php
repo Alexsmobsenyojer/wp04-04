@@ -90,16 +90,16 @@ foreach ($users as $user) {
     echo "<br />";
     echo "<br />";
    echo $user->getSurname(). "s setup: <br />";
-   echo "Case: ".$user->getComputer()->getCase(). "<br />";
-   echo ", Motherboard: ".$user->getComputer()->getMB()."<br />";
-   echo ", Solid state disk: ".$user->getComputer()->getSSD(). "<br />";
-   echo ", Procesor: ".$user->getComputer()->getCPU(). "<br />";
-   echo ", Operating memory: ".$user->getComputer()->getRAM(). "<br />";
-   echo ", Keyboard: ".$user->getComputer()->getKeyboard(). "<br />";
-   echo ", Mouse: ".$user->getComputer()->getMouse(). "<br />";
-   echo ", Graphics card: ".$user->getComputer()->getGPU(). "<br />";
-   echo ", Display: ".$user->getComputer()->getDisplay(). "<br />";
-   echo ", Power Supply: ".$user->getComputer()->getPowersupply(). "<br />";
+   echo "-Case: ".$user->getComputer()->getCase(). "<br />";
+   echo "-Motherboard: ".$user->getComputer()->getMB()."<br />";
+   echo "-Solid state disk: ".$user->getComputer()->getSSD(). "<br />";
+   echo "-Procesor: ".$user->getComputer()->getCPU(). "<br />";
+   echo "-Operating memory: ".$user->getComputer()->getRAM(). "<br />";
+   echo "-Keyboard: ".$user->getComputer()->getKeyboard(). "<br />";
+   echo "-Mouse: ".$user->getComputer()->getMouse(). "<br />";
+   echo "-Graphics card: ".$user->getComputer()->getGPU(). "<br />";
+   echo "-Display: ".$user->getComputer()->getDisplay(). "<br />";
+   echo "-Power Supply: ".$user->getComputer()->getPowersupply(). "<br />";
    
 }
 ?>
