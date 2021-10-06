@@ -39,7 +39,7 @@ $pc2 = new Computer("miniATX");
         $pc2->addCPU('Intel i9');
         $pc2->addRAM(' 32 GB dual channel pack');
         $pc2->connectKeyboard('Razer keyboard');
-        $pc2->connectMouse('Razer mouse');
+        $pc2->connectMouse('');
         $pc2->addGPU ('RX 580');
         $pc2->connectDisplay('Acer');
         $pc2->addPowerSupply  ('600W');
@@ -65,7 +65,7 @@ echo $user2->getSurname();
 echo "<br />";
 
 
-$user3 = new User("Deez","Sheen","pudding@mail.com","1.4.1996","");
+$user3 = new User("Deez","Sheen","ChSheen@mail.com","1.4.1996","");
 $user3->setGender('Femboy');
 echo "<br />";
 echo $user3->getEmail();
@@ -85,10 +85,10 @@ catch (\Throwable $th) {
     echo "Mouse error:" . $th->getMessage();}
     echo "<br />";
     echo "<br />";
-
+    $i = 1;
 foreach ($users as $user) {
     echo "<br />";
-    echo "<br />";
+   echo "User". $i .": ". $user->getName().", " .$user->getSurname() .", " . $user->getEmail() .", " . $user->getBirth() .", " . $user->getGender(). "<br />";
    echo $user->getSurname(). "s setup: <br />";
    echo "-Case: ".$user->getComputer()->getCase(). "<br />";
    echo "-Motherboard: ".$user->getComputer()->getMB()."<br />";
@@ -100,7 +100,7 @@ foreach ($users as $user) {
    echo "-Graphics card: ".$user->getComputer()->getGPU(). "<br />";
    echo "-Display: ".$user->getComputer()->getDisplay(). "<br />";
    echo "-Power Supply: ".$user->getComputer()->getPowersupply(). "<br />";
-   
+   $i++;
 }
 ?>
 </body>
