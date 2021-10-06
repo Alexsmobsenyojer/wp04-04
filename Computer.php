@@ -128,55 +128,7 @@ class Computer
     public function  getMB()
     {return $this->MB;}
     
-    
-
-}
-$pc1 = new Computer("ATX");
-    try
-     {
-        $pc1->addMotherBoard('MSI super socket 949');
-        $pc1->mountDrive('Samsung 516 GB');
-        $pc1->addCPU('Intel i5 10800U');
-        $pc1->addRAM('Corsair 16 GB dual channel pack');
-        $pc1->connectKeyboard('Logitech keyboard');
-        $pc1->connectMouse('Logitech mouse');
-        $pc1->addGPU ('RTX 3080');
-        $pc1->connectDisplay('Samsung');
-        $pc1->addPowerSupply  ('800W');
-        
-        echo "Computer1 connected all peripherials successfully!";
-        echo "<br />";
-        } 
-    catch (\Throwable $th) {
-        echo "Computer issues:" . $th->getMessage();
-                          }
-$pc2 = new Computer("miniATX");
-    try
-     {
-        $pc2->addMotherBoard('IDK ');
-        $pc2->mountDrive('248 GB');
-        $pc2->addCPU('Intel i9');
-        $pc2->addRAM(' 32 GB dual channel pack');
-        $pc2->connectKeyboard('Razer keyboard');
-        $pc2->connectMouse('Razer mouse');
-        $pc2->addGPU ('RX 580');
-        $pc2->connectDisplay('Acer');
-        $pc2->addPowerSupply  ('600W');
-        
-        echo "Computer2 connected all peripherials successfully!";
-        } 
-    catch (\Throwable $th) {
-        echo "Computer issues:" . $th->getMessage();
-                          }
-
- $computers = array( $pc1, $pc2);                    
+}            
 
 ?>
-        return $this->SSD;
-        return $this->CPU;
-        return $this->RAM;
-        return $this->keyboard;
-        return $this->mouse;
-        return $this->GPU;
-        return $this->display;
-        return $this->powersupply;
+       
