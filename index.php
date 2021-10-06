@@ -58,14 +58,14 @@ echo $user1->getName();
 echo "<br />";
 
 //Users
-$user2 = new User("Brandon", NULL,"Brandon@gmail.com","3.10.1985","fluid");
+$user2 = new User("Brandon", "","Brandon@gmail.com","3.10.1985","fluid");
 $user2->setSurname('Big');
 echo "<br />";
 echo $user2->getSurname();
 echo "<br />";
 
 
-$user3 = new User("Deez","Sheen","pudding@mail.com","1.4.1996",NULL);
+$user3 = new User("Deez","Sheen","pudding@mail.com","1.4.1996","");
 $user3->setGender('Femboy');
 echo "<br />";
 echo $user3->getEmail();
@@ -85,7 +85,7 @@ catch (\Throwable $th) {
     echo "Mouse error:" . $th->getMessage();}
     echo "<br />";
     echo "<br />";
-var_dump($user3);
+
 foreach ($users as $user) {
     echo "<br />";
     echo "<br />";
