@@ -82,7 +82,6 @@ class Computer
         throw new Exception("You dont have a mouse");
     }
     }
-    public function  getMouse(){return $this->mouse;}
     public function  addGPU (string $GPU)
     {
     if(isset($this->MB))
@@ -120,14 +119,25 @@ class Computer
     }
     }
     public function  getCase()
-    {
-        return $this->case;
-        
-        
-    }
+    {return $this->case;}
     public function  getMB()
     {return $this->MB;}
-    
+    public function  getSSD()
+    {return $this->SSD;}
+    public function  getCPU()
+    {return $this->CPU;}
+    public function  getRAM()
+    {return $this->RAM;}
+    public function  getKeyboard()
+    {return $this->keyboard;}
+    public function  getMouse()
+    {return $this->mouse;}
+    public function  getGPU()
+    {return $this->GPU;}
+    public function  getDisplay()
+    {return $this->display;}
+    public function  getPowersupply()
+    {return $this->powersupply;}
 }            
 
 ?>

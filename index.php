@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width={device-width}, initial-scale=1.0">
-    <title>Document</title>
+    <title>Users PC</title>
 </head>
 <body>
 <?php
 require_once 'Computer.php';
 require_once 'Users.php';
+
 //Computers
 $pc1 = new Computer("ATX");
     try
@@ -70,6 +71,7 @@ echo "<br />";
 echo $user3->getEmail();
 echo "<br />";
 echo "<br />";
+
 //Assign
 $computers = array( $pc1, $pc2);  
 $users = array($user1,$user2,$user3);
@@ -87,9 +89,18 @@ var_dump($user3);
 foreach ($users as $user) {
     echo "<br />";
     echo "<br />";
-   echo "Case is: ".$user->getComputer()->getCase();
-   echo ", MB is: ".$user->getComputer()->getMB();
-   echo "<br />";echo "<br />";
+   echo $user->getSurname(). "s setup: <br />";
+   echo "Case: ".$user->getComputer()->getCase(). "<br />";
+   echo ", Motherboard: ".$user->getComputer()->getMB()."<br />";
+   echo ", Solid state disk: ".$user->getComputer()->getSSD(). "<br />";
+   echo ", Procesor: ".$user->getComputer()->getCPU(). "<br />";
+   echo ", Operating memory: ".$user->getComputer()->getRAM(). "<br />";
+   echo ", Keyboard: ".$user->getComputer()->getKeyboard(). "<br />";
+   echo ", Mouse: ".$user->getComputer()->getMouse(). "<br />";
+   echo ", Graphics card: ".$user->getComputer()->getGPU(). "<br />";
+   echo ", Display: ".$user->getComputer()->getDisplay(). "<br />";
+   echo ", Power Supply: ".$user->getComputer()->getPowersupply(). "<br />";
+   
 }
 ?>
 </body>
