@@ -54,21 +54,21 @@ $user1 = new User("Deez","Androvic","pudding@deeznuts.com","6.9.2000","fluid");
 $user1->setName('Alex');
 echo "<br />";
 echo "<br />";
-echo $user1->getName();
+echo "Name of user1 changed to".$user1->getName();
 echo "<br />";
 
 //Users
 $user2 = new User("Brandon", "","Brandon@gmail.com","3.10.1985","fluid");
 $user2->setSurname('Big');
 echo "<br />";
-echo $user2->getSurname();
+echo "Surname of user2 changed to". $user2->getSurname();
 echo "<br />";
 
 
 $user3 = new User("Deez","Sheen","ChSheen@mail.com","1.4.1996","");
 $user3->setGender('Femboy');
 echo "<br />";
-echo $user3->getEmail();
+echo "Email of user3 changed to". $user3->getEmail();
 echo "<br />";
 echo "<br />";
 
